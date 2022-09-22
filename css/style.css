@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 62.5% equivalent 10 pixel */
+html{
+    font-size: 62.5%;
+}
+
+/* font family */
+@font-face {
+    font-family: 'Dosis_Bold';
+    src: url('/font/Dosis_Bold.ttf');
+}
+/* Navigation */
+.nav-flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    background-color: bisque;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-ul a, .nav-search{
+    font-family: 'Dosis_Bold';
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.nav-search input{
+    height: 3vh;
+    width: 15vw;
+    border: none;
+}
+.nav-search input:focus{
+    outline: none;
+    background-color: #dfe;
+    border: 0;
+}
