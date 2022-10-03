@@ -12,6 +12,10 @@ html{
     font-family: 'Dosis_Bold';
     src: url('/font/Dosis_Bold.ttf');
 }
+@font-face {
+    font-family: 'Carnas_Extra_Bold';
+    src: url('/font/Carnas_Extra_Bold.otf');
+}
 /* Navigation */
 .nav-flexbox{
     display: flex;
@@ -47,4 +51,30 @@ html{
     outline: none;
     background-color: #dfe;
     border: 0;
+}
+/* Section Maximiliano */
+
+.box-section-img{
+    /* box-shadow: parte horizonta, parte vertical, color; */
+/*     box-shadow: ; */
+
+}
+.section-flexbox-two-content{
+    display: flex;
+    justify-content: space-around;
+}
+.section-flexbox-two-title{
+    margin: 25px;
+    font-family: 'Carnas_Extra_Bold';
+    font-size: 4rem;
+}
+.section-flexbox-two-image{
+    width: 35vw;
+    height: 35vh;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.section-flexbox-two-content-image{
+    font-family: 'Carnas_Extra_Bold';
+    font-size: 1rem;
 }
