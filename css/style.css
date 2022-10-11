@@ -48,3 +48,122 @@ html{
     background-color: #dfe;
     border: 0;
 }
+
+
+/* contacto*/
+
+
+@keyframes ejemploColor{
+    from{background-color:yellow;}
+    to{background-color: cornflowerblue;}
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(5rem, 1fr));
+    background-color: aliceblue;
+    max-width: 1200px;
+    column-gap: 6rem;
+    margin-top: 1em;
+ 
+}
+.imagen{
+border-radius: px;
+height: 30vh;
+width:  30vw;
+margin-top: 1em;
+
+
+}
+
+.flex_cab{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+}
+.imagen_header{
+    border-radius: px;
+    height: 40vh;
+    width:  150vh;
+    
+    
+    }
+    
+
+    h1 {
+        width:500px;
+        margin: 0 auto;
+        background: green;
+        text-align: center;
+    }
+
+    .grid_content_aloja{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100rem, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(5rem, 1fr));
+        background-color: aliceblue;
+        max-width: 1200px;
+        margin: auto;
+        column-gap: 6rem; 
+    }
+    
+    .grid-container-1{
+        display: flex;
+        margin-left: 10rem;
+  
+        /*border: 1px solid;*/
+        align-items: stretch; 
+        grid-template-columns: auto auto;
+
+            
+    }
+
+  
+    @media only screen and (max-width: 1500px) {
+        .grid-container-1 {
+          grid-template-columns: 1fr;
+        }
+    }
+    
+      /* Max width 50% and height: auto for responsive image that takes up 50% of width */
+      .img-tarjeta {
+        height: auto;
+        object-fit: cover;
+        max-width: 30rem;
+      }
+      .text-container {
+        max-width: 100%;
+      }
+      
+      h2{text-align: center; }
+    
+      .caja_img{
+        width: 30rem;
+        flex: 1 1 auto;
+       }
+       .caja_text {
+        width: 80rem;
+        flex: 1 1 auto;
+       } 
+  
+   
+h3{
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+ul{
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+.button-cont {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 5vh;
+    width:  30vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
