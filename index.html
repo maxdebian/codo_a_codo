@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./img/favicon.webp" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/function.js"></script>
+    <script src="https://kit.fontawesome.com/023b71d13f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,56 +25,66 @@
                 <li><a href="./registro.html">Registrarse</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section class="section-slider-container">
-            <ul class="slider">
-                <li id="slide1">
-                    <h1>Title Slider</h1>
-                    <img src="./img/maradonaMundial.jpg"/>
-                </li>
-                <li id="slide2">
-                  <img src="./img/messiYMaradona.jpg"/>
-                </li>
-                <li id="slide3">
-                    <img src="./img/copaDelMundo.jpg"/>
-                </li>
-              </ul>
-              
-              <ul class="menu">
-                <li>
-                  <a href="#slide1">1</a>
-                </li>
-                <li>
-                  <a href="#slide2">2</a>
-                </li>
-                 <li>
-                  <a href="#slide3">3</a>
-                </li>
-              </ul>
-        </section>
-         <section class="section-flexbox-two">
-            <span class="section-flexbox-two-title">Mundiales Argentinos</span>
-            <div class="section-flexbox-two-content">
-                <div>
-                    <img src="./img/maradonaMundial.jpg" alt="" class="section-flexbox-two-image">
-                    <p>Maradona</p> 
-                </div>
-                <div>
-                    <img src="./img/messiYMaradona.jpg" alt="" class="section-flexbox-two-image">
-                    <p>Messi</p>
+        <div class="rowHeader">
+            <div class="rowHours">
+                <div class="argentina">
+                    <p>ARGENTINA</p>
+                    <p><span id="hoursAr"></span>:<span id="minutesAr"></span>:<span id="secondsAr"></span> - <span id="typeTimeAr"></span></p>
+                    <br>
+                    <p>QATAR</p>
+                    <p><span id="hoursCa"></span>:<span id="minutesCa"></span>:<span id="secondsCa"></span> - <span id="typeTimeCa"></span></p>
                 </div>
             </div>
-        </section> 
+            <div class="rowWeather">
 
-
-
+                <div class="argentina">
+                   <p>ARGENTINA</p>
+                    <div class="temperture">
+                        <span id="locationDescription"></span>
+                        <img src="" id="locationIconAnimated" alt="" class="locationIconAnimated">
+                    </div>
+                    <div class="location">
+                        <span id="tempertureValue"></span>
+                        <span id="tempertureDescription"></span>
+                    </div>
+                    <div class="speedTime">
+                        <span class="speedTimeTitle">Vel. del Viento</span>
+                        <span id="speedTimeDescription"></span>
+                    </div>
+                </div>
+                <div class="catar">
+                   <p>QATAR</p>
+                    <div class="tempertureCatar">
+                        <span id="locationDescriptionCatar"></span>
+                        <img src="" id="locationIconAnimatedCatar" alt="" class="locationIconAnimated">
+                    </div>
+                    <div class="locationCatar">
+                        <span id="tempertureValueCatar"></span>
+                        <span id="tempertureDescriptionCatar"></span>
+                    </div>
+                    <div class="speedTime">
+                        <span class="speedTimeTitle">Vel. del Viento</span>
+                        <span id="speedTimeDescriptionCatar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-carousel">
+            <div class="carousel">
+                <div id="imagen"></div>
+            </div>
+            <div class="controles">
+            </div>
+        </section>
+        <section class="section-division"></section>
         <section class="section-container">
             <div class="card">
-                <a href="">
+                <a href="./contenidos/mundiaMexico86.html">
                     <img src="./img/maradonaMundial.jpg" alt="">
-                    <h4>Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus, quisquam illum iusto eligendi ea voluptates temporibus cumque quo reiciendis earum tenetur dolore aliquam praesentium harum et saepe ipsam accusantium?</p>
+                    <h4>Mundial de México 1986</h4>
+                    <p>La Argentina lo disfrutó a pleno y fue el salto final para convertirlo en el extraordinario jugador que la hizo ganar su segunda copa mundial. Tomando en cuenta que el equipo de Carlos Bilardo había logrado la clasificación de manera angustiosa un año antes y que la gira previa al torneo no abundó en buenos rendimientos.</p>
                 </a>
             </div>
        
@@ -94,9 +105,69 @@
        
          
         </section>
+        <section class="section-division"></section>
+        <section class="section-flexbox-two">
+            <span class="section-flexbox-two-title">Mundiales Argentinos</span>
+            <div class="section-flexbox-two-content">
+                <div>
+                    <img src="./img/maradonaMundial.jpg" alt="" class="section-flexbox-two-image">
+                    <p>Maradona</p> 
+                </div>
+                <div>
+                    <img src="./img/messiYMaradona.jpg" alt="" class="section-flexbox-two-image">
+                    <p>Messi</p>
+                </div>
+            </div>
+        </section> 
+        <section class="section-division"></section>
+        <section class="section-container-zoom">
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <p class="section-container-zoom-title">Title  Odit fuga omnis deserunt. In obcaecati commodi, repellat corporis laudantium nam at. Dignissimos, laudantium adipisci?</p>
+            </figure>
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <p class="section-container-zoom-title">Title  Odit fuga omnis deserunt. In obcaecati commodi, repellat corporis laudantium nam at. Dignissimos, laudantium adipisci?</p>
+            </figure>
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <p class="section-container-zoom-title">Title  Odit fuga omnis deserunt. In obcaecati commodi, repellat corporis laudantium nam at. Dignissimos, laudantium adipisci?</p>
+            </figure>
+        </section>
+        <section class="section-division"></section>
+        <section class="section-container-stadium-zoom">
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <div class="section-container-zoom-stadium-title">
+                    <p>Name Stadium</p>
+                </div>
+            </figure>
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <div class="section-container-zoom-stadium-title">
+                    <p>Name Stadium</p>
+                </div>
+            </figure>
+            <figure>
+                <img src="./img/messiYMaradona.jpg" alt="">
+                <div class="section-container-zoom-stadium-title">
+                    <p>Name Stadium</p>
+                </div>
+            </figure>
+        </section>
+        <section class="section-division"></section>
+        <section class="section-video-maps">
+            <iframe src="https://player.vimeo.com/video/751489603?h=e99fed04d0&autoplay=0&background=0&loop=1&playsinline=1&quality=540p&title=0" width="440" height="440" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1555012.8192022538!2d50.212157114042085!3d25.1430650195973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sCatar!5e0!3m2!1ses!2sar!4v1665274007309!5m2!1ses!2sar" width="440" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="section-division"></section>
     </main>
     <footer>
-        
+        <section class="section-footer">
+            <p class="text-footer">CODO A CODO</p>
+            <p data-v-abfbddf2="" class="copyRight">Copyright © 2022 Gabriel Gigueiro, Maximiliano Tedesco, Richard ....  </p>
+            <p class="social-media"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </section>
     </footer>
     
 </body>
