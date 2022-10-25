@@ -2,9 +2,6 @@ let timeAr;
 let timeCatar;
 let addHours;
 let time;
-
-
-
 /* Carousel */
 window.onload = function () {
     var URLCurrent = window.location.origin;
@@ -18,10 +15,6 @@ window.onload = function () {
     let locationDescriptionCatar = document.getElementById('locationDescriptionCatar');
     let locationIconAnimatedCatar = document.getElementById('locationIconAnimatedCatar');
     let speedTimeDescriptionCatar = document.getElementById('speedTimeDescriptionCatar');
-
-
-
-   /*  weather(); */
     timeNow(); 
     loopTime();
     
@@ -73,9 +66,7 @@ window.onload = function () {
                     locationDescription.textContent = location.toUpperCase();
                     let speed = data.wind.speed;
                     speedTimeDescription.textContent = `${speed} m/s`;
-/*                     let iconCode = data.weather[0].icon;
-                    const urlIcon = `http://openweathermap.org/img/wn/${iconCode}.png` */
-                    
+                   
                     switch (data.weather[0].main) {
                         case 'Clear':
                             locationIconAnimated.src = URLCurrent+'/img/amcharts_weather_icons_1.0.0/animated/day.svg'
@@ -121,8 +112,6 @@ window.onload = function () {
                     locationDescriptionCatar.textContent = location.toUpperCase();
                     let speed = dataCatar.wind.speed;
                     speedTimeDescriptionCatar.textContent = `${speed} m/s`;
-/*                     let iconCode = dataCatar.weather[0].icon;
-                    const urlIcon = `http://openweathermap.org/img/wn/${iconCode}.png` */
                     switch (dataCatar.weather[0].main) {
                         case 'Clear':
                             locationIconAnimatedCatar.src =  URLCurrent+'/img/amcharts_weather_icons_1.0.0/animated/day.svg'
@@ -146,7 +135,7 @@ window.onload = function () {
                             locationIconAnimatedCatar.src= URLCurrent+'/img/amcharts_weather_icons_1.0.0/animated/weather.svg'
                             break;  
                         default:
-                            locationIconAnimatedCatar.src='./img/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg'
+                            locationIconAnimatedCatar.src= URLCurrent+'/img/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg'
                             break;
                     }
                     
@@ -155,12 +144,6 @@ window.onload = function () {
                     console.log(error
                         )
                 })
-/*             tempertureValue
-            tempertureDescription
-            locationDescription
-            locationIconAnimated
-            speedTimeDescription
- */
         })
     }
 
@@ -202,10 +185,7 @@ function setTimeHoursNow(){
 }
 async function weather(){
         try {
-
-            
             const response = await fetch('https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=43e59687&&app_key=99a35b79022d86833f87b1bf4d467925');
-            //const response = await fetch('http://api.weatherunlocked.com/api/current/us.33109?lang=us&app_id=43e59687&app_key=ac707c1d2cfba3ddd0f8cb99161b2345');
             if(response.status===200){
                 const responseJson = await response.json();
                 console.log(responseJson)
@@ -213,80 +193,4 @@ async function weather(){
         } catch (error) {
             console.log(error)
         }
-
-        
-
-/*     fetch('http://api.weatherunlocked.com/api/current/us.33109?lang=us&app_id=43e59687&app_key=ac707c1d2cfba3ddd0f8cb99161b2345')
-        .then(response => response.json() )
-        .then(json => console.log(json)) */
-
-/*     fetch("http://worldtimeapi.org/api/timezone/America/Argentina/Salta")
-        .then(responseTime => responseTime.json())
-        .then(responseTime => console.log(responseTime)) */
-
-
-        //aulasvirtuales.bue.edu.ar/mod/forum/discuss.php?d=53834
-
-        //docs.google.com/forms/d/1EFks-qN-N_Ue7oRbJHyLnpJzwrseJ1KznAXiNRv-Jfw/edit
-
-
-        //https://www.youtube.com/watch?v=RVUMJUIwT2A
-
-/* 
-geolocation
-https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
-
-reloj
-https://desarrolloweb.com/articulos/549.php
-https://uniwebsidad.com/libros/javascript/capitulo-8/relojes-contadores-e-intervalos-de-tiempo#:~:text=Para%20crear%20y%20mostrar%20un,actualizar%20el%20reloj%20cada%20segundo.
-https://aprende-web.net/jspracticas/tiempo/tiempo1.php
-
-Clima
-https://openweathermap.org/
-key f0d11929539a134a6fd2e2b40c69e357
-
-
-https://www.amcharts.com/free-animated-svg-weather-icons/
-
-https://www.youtube.com/watch?v=RVUMJUIwT2A
-
-
-https://www.youtube.com/watch?v=PNr8-JDMinU
-
-
-
-https://profile.es/blog/apis-front-end/
-
-
-https://worldtimeapi.org/pages/examples
-
-https://developer.weatherunlocked.com/admin
-Credentials
-App name: None's App
-App ID: 43e59687
-Key: ac707c1d2cfba3ddd0f8cb99161b2345
-
-Latest Messages
-Application key has been created
-Applications
-Edit None's App
-Name
-None's App
-Description
-Default application created on signup.
-Current Plan
-Local Weather Free › 
-Status
-  Live
-Application ID
-43e59687
-This is the application ID, you should send with each API request.
-
-Application Keys
-ac707c1d2cfba3ddd0f8cb99161b2345	—
-These are application keys used to authenticate requests.
-
-
-*/
-
 }

@@ -116,7 +116,7 @@ body{
     color: white;
 }
 .section-flexbox-two-image{
-    width: 35vw;
+    width: 28vw;
     height: 35vh;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -220,11 +220,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    height: 600px;
+    height: 400px;
 }
 .section-container-stadium-zoom figure{
     width: 320px;
-    height: 600px;
+    height: 400px;
     overflow: hidden;
     transition: all 500ms ease;
     border-radius: 15px;
@@ -239,7 +239,7 @@ body{
 }
 .section-container-stadium-zoom figure img:hover{
     transform: scale(1.2);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .section-container-zoom-stadium-title{
     position: absolute;
@@ -338,4 +338,18 @@ body{
 }
 .section-division{
     margin-bottom: 10vh;
+}
+
+/* Animation */
+@keyframes go-left-right {        
+    from { left: 0px; }             
+    to { left: calc(100% - 50px); } 
+}
+
+.progress {
+    margin-top: 35px;
+    animation: go-left-right 9s infinite alternate;
+    position: relative;
+    width: 90px;
+    height: 60px;
 }
