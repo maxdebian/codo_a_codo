@@ -47,12 +47,12 @@ window.onload = function () {
         renderizarImagen();
     }
 
-    if(navigator.geolocation){
+    /* if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
             var lat;
             var lon;
             lon = position.coords.longitude;
-            lat = position.coords.latitude;
+            lat = position.coords.latitude; */
             const url = `https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&lang=es&units=metric&APPID=99a35b79022d86833f87b1bf4d467925`;
 
             fetch(url)
@@ -144,8 +144,8 @@ window.onload = function () {
                     console.log(error
                         )
                 })
-        })
-    }
+    /*     })
+    } */
 
 
 
