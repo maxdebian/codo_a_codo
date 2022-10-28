@@ -194,3 +194,21 @@ async function weather(){
             console.log(error)
         }
 }
+
+/* 
+Api Email
+https://formsubmit.co/ 
+Correo: proyectocodoacodo2022@gmail.com
+Password: CodoaCodoProyecto2022
+
+Api Weather
+https://openweathermap.org/
+key f0d11929539a134a6fd2e2b40c69e357
+
+Api Hours
+https://worldtimeapi.org/pages/examples
+
+geolocation
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+
+*/
