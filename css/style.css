@@ -1039,7 +1039,7 @@ textarea{
         margin-top: 3px;
     }
     .rowWeather{
-        width: 341px;
+        width: 100%;
         margin-top: -4px;
     }
     .section-container .card, .section-container .card img{
