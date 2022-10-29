@@ -889,15 +889,15 @@ textarea{
 
 
 
-@media screen and (min-width:180px) and (max-width:479px) {
+/* @media screen and (min-width:180px) and (max-width:479px) {
     .nav-search{
         display: none;
     }
 }
-
+ */
 
 /* media query */
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:779px) {
 
     .nav-search{
         display: none;
@@ -911,15 +911,18 @@ textarea{
         /* background-color: white; */
         margin: auto;
         width: 100%;
+        background-color: transparent;
     }
     .nav-ul{
         margin-right: 10px;
     }
     .rowHeader{
-        width: 480px;
+        width: 100%;
         font-size: 9px;
         justify-content: space-around;
         height: 11vh;
+        margin: auto;
+        background-color: transparent;
     }
     .rowHours{
         width: 70px;
@@ -1022,6 +1025,7 @@ textarea{
     .nav-flexbox{
        /*  background-color: white; */
         margin: auto;
+        background-color: transparent;
     }
     .nav-ul{
         margin-right: 10px;
@@ -1032,6 +1036,7 @@ textarea{
         font-size: 17px;
         justify-content: space-around;
         height: 11vh;
+        background-color: transparent;
     }
     .rowHours{
         width: 150px;
