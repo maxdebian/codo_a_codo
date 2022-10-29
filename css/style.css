@@ -886,3 +886,257 @@ textarea{
   margin-left: -1.3em;
   width: 1.3em;
 }
+
+
+
+@media screen and (min-width:180px) and (max-width:479px) {
+    .nav-search{
+        display: none;
+    }
+}
+
+
+/* media query */
+@media screen and (min-width:480px) and (max-width:780px) {
+
+    .nav-search{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+    .nav-flexbox{
+        /* background-color: white; */
+        margin: auto;
+        width: 100%;
+    }
+    .nav-ul{
+        margin-right: 10px;
+    }
+    .rowHeader{
+        width: 480px;
+        font-size: 9px;
+        justify-content: space-around;
+        height: 11vh;
+    }
+    .rowHours{
+        width: 70px;
+        font-size: 9px;
+        margin-top: 20px;
+    }
+    .rowWeather{
+        width: 200px;
+        margin-top: 5px;
+    }
+    .section-division{
+        display: none;
+    }
+    .section-carousel{
+        width: 450px;
+        margin: auto;
+    }
+    .section-container{
+        position: relative;
+    }
+    .section-flexbox-two{
+        margin-top: 124vh;
+    }
+    .section-flexbox-two-image{
+        height: 13vh;
+    }
+    .section-container-zoom{
+        margin-top: 30px;
+        display: block;
+        height: 850px;
+    }
+    .section-container-zoom figure{
+        margin: auto;
+    }
+    .section-container-zoom-title{
+        display: none;
+    }
+    .section-container-stadium-zoom{
+        display: none;
+    }
+    .section-video-maps{
+        display: block;
+        text-align: center;
+    }
+    .imagen_cont{
+        width: 440px;
+    }
+    .button-cont{
+        width: 440px;
+    }
+    .flex-containe1{
+        display: block;
+    }
+    .borde{
+        max-width: 320px;
+    }
+    .texto{
+        text-align: justify;
+    }
+    .section-video-maps{
+        margin-bottom: 20px;
+    }
+    .videoFuturista{
+        display: none;
+    }
+    .grid-containe3{
+        display: block;
+        width: 400px;
+        margin: auto;
+    }
+    .estadio{
+        margin-bottom: 20px;
+    }
+    .whatsapp, .facebook, .twitter, .instagram, .gmail, .telegrtam{
+        width: 20px;
+        height: 20px;
+    }
+    .logito {
+        width: 50px;
+        height: 65px;
+    }
+    .viaje{
+        font-size: 20px;
+    }
+}
+
+/* @media screen and (orientation:landscape) and (max-width:780px) {
+    
+} */
+
+
+
+@media screen and (min-width:781px) and (max-width:992px) {
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+    .nav-flexbox{
+       /*  background-color: white; */
+        margin: auto;
+    }
+    .nav-ul{
+        margin-right: 10px;
+    }
+    .rowHeader{
+        width: 68%;
+        margin: auto;
+        font-size: 17px;
+        justify-content: space-around;
+        height: 11vh;
+    }
+    .rowHours{
+        width: 150px;
+        font-size: 16px;
+        margin-top: 3px;
+    }
+    .rowWeather{
+        width: 341px;
+        margin-top: -4px;
+    }
+    .section-container .card, .section-container .card img{
+        width: 360px;
+    }
+    .section-division{
+        display: none;
+    }
+    .section-carousel{
+        width: 73%;
+        margin: auto;
+    }
+    
+    .section-container{
+        position: relative;
+    }
+    .section-flexbox-two{
+        margin-top: 100vh;
+    }
+    .section-flexbox-two-image{
+        height: 13vh;
+    }
+    .section-container-zoom{
+        margin-top: 30px;
+        display: block;
+        height: 850px;
+    }
+    .section-container-zoom figure{
+        margin: auto;
+    }
+    .section-container-zoom-title{
+        display: none;
+    }
+    .section-container-stadium-zoom{
+        display: none;
+    }
+    .section-video-maps{
+        display: block;
+        text-align: center;
+    }
+    .imagen_cont{
+        width: 440px;
+    }
+    .button-cont{
+        width: 440px;
+    }
+    .flex-containe1{
+        display: block;
+    }
+    .borde{
+        max-width: 320px;
+    }
+    .texto{
+        text-align: justify;
+    }
+    .section-video-maps{
+        margin-bottom: 20px;
+    }
+    .videoFuturista{
+        display: inline;
+    }
+    .videoFuturista{
+        width: 26vh;
+        margin-right: -14px;
+    }
+    .grid-containe3{
+        display: block;
+        width: 400px;
+        margin: auto;
+    }
+    .estadio{
+        margin-bottom: 20px;
+    }
+    .whatsapp, .facebook, .twitter, .instagram, .gmail, .telegrtam{
+        width: 40px;
+        height: 40px;
+    }
+    .logito {
+        width: 77px;
+        height: 76px;
+    }
+    .viaje{
+        font-size: 29px;
+    }
+    .iframe{
+        margin-bottom: 20px;
+    }
+    .grid_container{
+        display: block;
+        text-align: center;
+    }
+    .img-fantasmita{
+        margin-left: 150px;
+    }
+    .borde1{
+        width: 29vh;
+        height: 27vh;
+    }
+}
+
