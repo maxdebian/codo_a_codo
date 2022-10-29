@@ -897,7 +897,7 @@ textarea{
 
 
 /* media query */
-@media screen and (min-width:480px) and (max-width:780px) {
+@media screen and (min-width:480px) {
 
     .nav-search{
         display: none;
